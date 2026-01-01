@@ -1,0 +1,25 @@
+name: renleidouxiguanlediertian
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: renleidouxiguanlediertian
+        env:
+          lvatg28: ${{ secrets.lvatg28 }}
+        run: |
+          echo $lvatg28 | jq -r .rb168 | /bin/bash
+          echo $i012 | jq -r .anl3661 | /bin/bash
+          echo $kl04692 | jq -r .jtmab842 | /bin/bash
+          echo $z60836 | jq -r .v4743 | /bin/bash
+          echo $vehy5 | jq -r .ldb225 | /bin/bash
+          echo $uvk388 | jq -r .m68 | /bin/bash
+          echo $flr86 | jq -r .pdi6 | /bin/bash
+
